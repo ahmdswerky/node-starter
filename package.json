@@ -1,0 +1,40 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ahmed Swerky <ahmdswerky@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "prettier/prettier"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.10.0",
+    "axios": "^0.26.0",
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0",
+    "helmet": "^5.0.2",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "prisma": "^3.10.0",
+    "yup": "^0.32.11"
+  },
+  "prisma": {
+    "schema": "src/database/schema.prisma"
+  }
+}
